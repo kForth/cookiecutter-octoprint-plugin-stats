@@ -1,0 +1,26 @@
+{% raw -%}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site CSS -->
+    <link href="static/css/main.css" rel="stylesheet">
+
+    <!-- Plotly -->
+    <script src="static/lib/plotly/plotly.min.js"></script>
+
+    <title>{{ page.title }}</title>
+</head>
+<body>
+{% include navbar.html %}
+
+<div class="container-fluid">
+    {{ content }}
+</div>
+<button class="btn btn-outline-secondary" onclick="topFunction()" id="top_btn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button>
+<script src="static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+{%- endraw %}
